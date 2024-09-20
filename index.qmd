@@ -243,9 +243,11 @@ To predict the species of new flowers using a multinomial logistic regression mo
 
 The VGAM (Vector Generalized Linear and Additive Models) package in R Programming Language provides a suite of functions for fitting a variety of regression models.
 
-```{r}
+```{r setup}
 #|message=FALSE
 #|warning = FALSE
+#|cache = TRUE
+#|include = FALSE
 
 library(VGAM) 
   
@@ -263,21 +265,23 @@ This loads the library and the data, then converts the variable 'species' from c
 ```{r}
 #|warning=FALSE
 #|message=FALSE
-#|cache = FALSE
-
-
-
-
+#|cache = TRUE
+#|include = FALSE
+#|echo = FALSE
 # Fit a multinomial logistic regression model 
-fit <- vglm(Species ~ Sepal.Length  
+suppressWarnings({
+  fit <- vglm(Species ~ Sepal.Length  
             + Sepal.Width 
             + Petal.Length 
             + Petal.Width, 
             data = iris, 
             family = multinomial) 
+})
   
 # Print the model summary 
-summary(fit) 
+suppressWarnings({
+  summary(fit)
+})
 
 ```
 

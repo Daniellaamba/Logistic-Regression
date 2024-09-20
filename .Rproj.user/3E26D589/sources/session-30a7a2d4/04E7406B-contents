@@ -390,4 +390,44 @@ model
 summary(model)
 ```
 
+```{r}
+library(ggplot2)  
+
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +  
+  geom_point()
+```
+```{r}
+sapply(iris[, 1:4], function(x) length(unique(x)))
+
+```
+
+```{r}
+library(glmnet)  
+
+# Converting the response to a factor and creating dummy variables  
+x <- model.matrix(Species ~ ., data = iris)[, -1]  
+y <- iris$Species  
+
+# Fit a multinomial model using cv.glmnet
+```
+
+
+```{r}
+model <- cv.glmnet(x, y, family = "multinomial", alpha = 1)  # Alpha = 1 for LASSO, 0 for Ridge
+```
+
+
+
+```{r}
+library(glmnet)  
+
+# Create model matrix without intercept  
+x <- model.matrix(Species ~ . - 1, data = iris)
+
+y <- as.factor(iris$Species)
+
+# Fit a multinomial model  
+model_glmnet <- cv.glmnet(x, y, family = "multinomial", alpha = 0.5) 
+summary(model_glmnet)
+```
 

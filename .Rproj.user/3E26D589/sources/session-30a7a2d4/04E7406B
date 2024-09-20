@@ -3,7 +3,7 @@
     "path": "C:/Users/DOjekere/CGIAR/Fowobaje, Kayode Rapheal (IITA) - Training Materials/2024/R markdown/Logistic Regression.Rmd",
     "project_path": null,
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "4106202520",
     "contents": "",
     "dirty": false,
     "created": 1726828628189.0,
@@ -12,15 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "393,0",
-        "scrollLine": "0"
+        "cursorPosition": "418,0",
+        "scrollLine": "410",
+        "last_setup_crc32": "30a7a2d41d19badb"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726221605,
+    "lastKnownWriteTime": 1726838941,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726221605,
+    "last_content_update": 1726838942010,
     "read_only": false,
     "read_only_alternatives": []
 }
