@@ -5,7 +5,7 @@
     "type": "quarto_markdown",
     "hash": "3787739709",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1726827739299.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -22,11 +22,11 @@
         "docOutlineSize": "69"
     },
     "folds": "",
-    "lastKnownWriteTime": 1726839625,
+    "lastKnownWriteTime": 1726841716,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1726840682168,
+    "last_content_update": 1726841716877,
     "read_only": false,
     "read_only_alternatives": []
 }

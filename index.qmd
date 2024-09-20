@@ -267,7 +267,7 @@ This loads the library and the data, then converts the variable 'species' from c
 #|message=FALSE
 #|cache = TRUE
 #|include = FALSE
-#|echo = FALSE
+
 # Fit a multinomial logistic regression model 
 suppressWarnings({
   fit <- vglm(Species ~ Sepal.Length  
@@ -339,7 +339,6 @@ $\beta_{1}$, $\beta_2$, ..., $\beta_{jp}$ are model coefficient associated with 
 -   Let's use a hypothetical dataset where we predict customer satisfaction (ordinal variable: Low, Medium, High) based on factors like age, income, and product usage.
 
 ```{r}
-
 # Load necessary libraries
 library(tidyverse)
 library(ordinal)
